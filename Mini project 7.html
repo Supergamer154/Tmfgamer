@@ -1,0 +1,52 @@
+<html>
+        <body><html>
+<head></head>
+<body>
+    <h1> Bank Login </h1>
+<form method="post" onsubmit="return  required()" name="reqforms">
+    FirstName
+    <br>
+<input type="text"required>
+<br><br>
+LastName
+<br>
+<input type="text"required>
+<br><br>
+Email ID
+<br>
+<input type="email"required>
+<br><br>
+Password
+<br>
+<input type="password"required name="pswd1">
+<br><br>
+Confirm Password
+<br>
+<input type="password"required name="pswd2">
+<br><br>
+<input type="submit">
+</form>
+<img src="https://img.freepik.com/free-vector/bank-building-with-cityscape_1284-52265.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1696723200&semt=ais" width="100%">
+</body>
+</html></body>
+        <style>form{
+    color: white;
+    font-size: 30px;
+    background-color: orange;
+}
+body{
+    background-color: blue;
+    color: white;
+}</style>
+        <script>function required()
+{
+    var pass=document.forms.reqforms.pswd1.value
+ var   comfpass=document.forms.reqforms.pswd2.value
+ if(pass!=comfpass){
+ alert("CONFORM PASSWORD IS NOT  SAME AS PASSWORD")
+ return false;
+ }
+    else
+    return true;
+}</script>
+      </html>
